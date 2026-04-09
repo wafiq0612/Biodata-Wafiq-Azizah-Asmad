@@ -49,18 +49,22 @@
         color: #6b21a8;
     }
 
+   
     .profile {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 20px;
-        flex-wrap: wrap;
     }
 
     .foto {
         width: 150px;
-        border-radius: 12px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
         border: 4px solid #c084fc;
         transition: 0.3s;
+        display: block;
+        margin: auto;
     }
 
     .foto:hover {
@@ -115,6 +119,9 @@
             <h2>Data Pribadi</h2>
 
             <div class="profile">
+
+                <!-- FOTO -->
+                <img src="wafiq.jpg" alt="Foto Wafiq" class="foto">
 
                 <!-- DATA -->
                 <table>
